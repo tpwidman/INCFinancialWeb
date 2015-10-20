@@ -10,8 +10,8 @@ export default class MyApp extends App {
 
         router.configure([
             { pattern: '', view: HomeViewControl },
-            { pattern: '/about', view: AboutViewControl},
-            { pattern: '/connect', view: ConnectViewControl},
+            { pattern: '/about', view: AboutViewControl },
+            { pattern: '/connect', view: ConnectViewControl },
             { pattern: '/portfolio', view: PortfolioViewControl}
         ]);
     }
