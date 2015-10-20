@@ -4,7 +4,6 @@ import AboutViewControl from '../viewcontrols/about/about.vc';
 import ConnectViewControl from '../viewcontrols/connect/connect.vc';
 import PortfolioViewControl from '../viewcontrols/portfolio/portfolio.vc';
 
-
 export default class MyApp extends App {
     constructor(router: routing.Router) {
         super();
