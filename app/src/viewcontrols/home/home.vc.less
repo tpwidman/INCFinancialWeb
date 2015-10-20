@@ -1,3 +1,92 @@
 [plat-control="home-vc"] {
+	h1, h2, h3, h4, p, div.paragraph,{
+		color:black;
+		text-align: center;
+	}
+	h2{
+		border-bottom: 1px;
+		border-color: white;
+	}
+	h4 {
+		text-transform: uppercase;
+	}
+	.flex-container
+		{
+		display:-webkit-flex;
+		display:-moz-flex;
+		display:flex;
+		flex-direction: row;
+		flex-flow: row;
+		text-align: center;
+		border-top: 1px;
+		justify-content:center;
+		}
+	.row.flex-container{
+		.col-phn-8{
+			.col-phn-4:hover{
+				hr{
+					opacity:1;
+				}
+				img {
+					background-color: rgba(255,255,255,0.15);
+  					border-radius: 50px;
+				}
+			}
+		}
+	}
+	.row2.flex-container{
+		.col-phn-8{
+			.col-phn-4{
+				border-bottom: 1px solid black;	
+			}
+		}
+	}	
+	
+	.row3.flex-container{
+		.col-phn-8{
+			border-top: 1px solid black;
+			.bottom
+				{
+				border-left:1px solid black;
+				border-right:1px solid black;
+					p{
+						text-align: justify;
+					}
+				}
+			}
+		}
+	hr{
+		opacity: 0;
+		background-color: red;
+		width: 80%;
+	}
+	button.main{
+		margin: auto;
+		
+	}
+	ul{
+		font-style: bold;
+		margin: auto;
+		display: table;
+		color:white;
+		padding-bottom: 10px;
+
+	}
+	.factslist{
+		#1, #2, #3{
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+		}
+	}
+	.row3.flex-container img{
+		width: 50px;
+		border: 1px solid black;
+		
+	}
+	.row.flex-container img:hover{
+	background-color: rgba(255,255,255,0.15);
+  	border-radius: 50px;
+  
+}
 	
 }
