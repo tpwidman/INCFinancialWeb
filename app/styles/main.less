@@ -1,3 +1,29 @@
 @import '../../node_modules/platypusui/dist/platypus';
 
+body {
+    color: #fff;
+    background-image: url('../images/INC-bg-whole2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    .container {
+        padding: 5em;
+    }
+
+    .flexbox {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row;
+        flex-wrap: nowrap;
+    }
+}
+
+@import '../src/templatecontrols/footer/footer.tc.less';
+@import '../src/templatecontrols/navbar/navbar.tc.less';
+
+@import '../src/viewcontrols/about/about.vc.less';
+@import '../src/viewcontrols/connect/connect.vc.less';
 @import '../src/viewcontrols/home/home.vc.less';
+@import '../src/viewcontrols/portfolio/portfolio.vc.less';
