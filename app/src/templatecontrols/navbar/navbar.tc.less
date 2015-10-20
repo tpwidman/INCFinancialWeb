@@ -1,23 +1,25 @@
 [plat-control="navbar"] {
-    border-top: 3px solid #fff;
-	border-bottom: 3px solid #fff;
-    color: #fff;
-        .flexbox {
-        /* flexbox setup */
-        -webkit-flex-direction: row;
-        flex-wrap: nowrap;
-        display: flex;
-        flex-flow: row;
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
 
-        li {
+    color: #fff;
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+        .flex-container {
+            border-top: 3px solid #fff;
+            border-bottom: 3px solid #fff;
+        /* flexbox setup */
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            padding: 20px;
+
+        .flex-item {
             color: #fff;
             list-style-type: none;
-            display: inline;
-            padding: 1em 4em 1em 4em;
         }
     }
 }
