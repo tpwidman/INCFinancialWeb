@@ -1,21 +1,42 @@
 @import '../../node_modules/platypusui/dist/platypus';
-@import '../src/viewcontrols/home/home.vc.less';
+@import '../styles/typography.less';
 
 body {
-    background-image: url(../images/INC-bg-whole2.png);
+    color: #fff;
+    background-image: url('../images/INC-bg-whole2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    .flexbox {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row;
+        flex-wrap: nowrap;
+    }
+    
+    button.main {
+    padding:14px;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid black;
+    color: white;
+    text-decoration:none;
+    margin: auto;
+    
+    }
+
+    button.main:hover{
+        background-color: rgba(255,255,255,0.15);
+    }  
+
 }
 
-button.main{
-  padding:14px;
-  font-size: 16px;
-  background: transparent;
-  border: 2px solid black;
-  color: white;
-  text-decoration:none;
-  margin: auto;
+@import '../src/templatecontrols/footer/footer.tc.less';
+@import '../src/templatecontrols/navbar/navbar.tc.less';
 
-}
-
-button.main:hover{
-	background-color: rgba(255,255,255,0.15);
-}  
+@import '../src/viewcontrols/about/about.vc.less';
+@import '../src/viewcontrols/connect/connect.vc.less';
+@import '../src/viewcontrols/home/home.vc.less';
+@import '../src/viewcontrols/portfolio/portfolio.vc.less';
