@@ -1,7 +1,6 @@
 [plat-control="navbar"] {
-
     color: #fff;
-
+    text-transform: uppercase;
         .logo {
             width: 100px;
             height: 100px;
@@ -14,12 +13,18 @@
         /* flexbox setup */
             display: flex;
             flex-flow: row nowrap;
-            justify-content: space-between;
-            padding: 20px;
+            justify-content: space-around;
 
         .flex-item {
             color: #fff;
             list-style-type: none;
+            padding: 20px;
+        }
+        .flex-item:hover {
+            background-color: rgba(255,255,255,0.3);
+        }
+        .flex-item:active {
+            background-color: rgba(255,255,255,0.3);
         }
     }
 }

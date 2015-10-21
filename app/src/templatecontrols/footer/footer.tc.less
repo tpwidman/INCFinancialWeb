@@ -1,9 +1,43 @@
 [plat-control="footer"] {
-    color: rgba(0,0,0,1);
-	background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding-top: 20px;
-    p {
-        font-size: 10px;
+    .contact {
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.3);
+        text-align: left;
+        text-decoration: none;
+        padding: 2em;
+        .contact-icons {
+            height: 40px;
+            width: 40px;
+            padding: 0.1em;
+            margin: 0.5em;
+            border-radius: 50px;
+            border: 2px solid #fff;
+        }
     }
+    .flex-container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-flow: row nowrap;
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+    .details {
+        padding: 1em;
+        img {
+            fill: #fff;
+            color: #fff;
+            padding: 1em;
+        }
+        .footer-icon {
+            height: 30px;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+
 }
