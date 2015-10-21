@@ -1,26 +1,45 @@
 [plat-control="connect-vc"] {
-	.connect-view {
+    .connect-view {
         text-align: center;
         
-    h2, h4{
-        font-family:Gotham-MediumItalic;
-        font-weight:normal;
-    }
-    h2{
-        font-size:45px;
-    }
+        plat-input, plat-button {
+            max-width: 400px;
+            background-color: whitesmoke;
+            opacity: .40;
+            font-family:'Gotham-Book';
+            text-transform: uppercase;     
+            }
+        
+        h2{
+            font-family:'Gotham-MediumItalic';
+            font-weight:normal;
+            font-size:45px;
+            color:grey;
+            opacity: 10%;
+                background: url('../images/INC-bg-whole2.png');
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-position: 50% 30%;
+        }
+        
+        h4{
+            font-family:'Gotham-Book';
+            font-size:25px;
+            color:grey;
+            padding-left: 10px;
+            padding-right: 10px; 
+            opacity: 10%;
+                background: url('../images/INC-bg-whole2.png');
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-position: 50% 40%; 
+        }
 
         .learn-more {
-            background-color: rgba(255,255,255,0.8);
+            background-color: rgba(255,255,255,.5);
             width: 100%;
-            color:black;
         }
     }
-    .col-dsk-8{
-                plat-input {
-                    background-color: whitesmoke;
-                    color: #00688B;
-                    text-transform: uppercase;
-                }
-    }
-}
+} 
