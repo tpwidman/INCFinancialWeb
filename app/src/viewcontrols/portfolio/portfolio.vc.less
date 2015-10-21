@@ -1,3 +1,128 @@
 [plat-control="portfolio-vc"] {
+	/*Portfolio Heading*/
+	.PortfolioHeader {
+		list-style: none;
+		font-size: 42px;
+		padding-top: 20px;
+		padding-bottom: 80px;
+		padding-left: 10px;
+		#TestimonialsBlock {
+			li {
+				width: 50px;
+				height: 50px;
+				float: left;
+				font-family: 'Gotham-Bold';	
+				text-decoration: underline;
+			}
+			img {
+				margin-right:10px;
+			}
+		}
+		#FriendsBlock {
+			float: right;
+			margin-right: 300px;
+			li {
+				width: 50px;
+				height: 50px;
+				float: left;
+				font-family: 'Gotham-Book';
+			}
+			img {
+				margin-right: 10px;
+			}
+		}
+	}
+	/*End of Portfolio Heading*/
+	
+	//TESTIMONIALS//
+
+	//Standard formating for all three divs//
+	.TestimonialColorBlock {
+		
+		
+		//Div for Testimonial Content//
+		.Testimonial {
+			max-width: 600px;
+			padding-top: 10px;
+			margin: auto;
+	
+			//Div for name of customer//	
+			.nameofCustomer {
+				font-family: 'Gotham-Bold';	
+				
+				.title {
+						font-weight: 100;
+						font-family: 'Gotham-Book';
+						}
+		
+				#logo1 {
+						height: 50px;
+						width: 50px;
+						margin-left: 120px;
+						}
+				#logo2 {
+						height: 50px;
+						width: 50px;
+						margin-left: 70px;
+						}
+				#logo3 {
+						height: 50px;
+						width: 50px;
+						margin-left: 25px;
+						}
+			}
+			//END OF DIV//
+		
+			//Horizontal line after name of customer block//
+			.lineAfterCustomer {
+			margin-top: -1em;
+			height: 2px;
+			background-color: #6B7F92;
+			}
+	
+	
+			//Div for the image of the customer//
+			.imageofCustomer {
+				height: 250x;
+				width: 275px;
+				float: left;
+				margin: 0 25px 10px 10px;
+			}
+			//END OF IMAGE DIV//
+		
+		}
+		//END OF TESTIMONIAL DIV//
+	
+	}
+	//END OF TESTIMONIAL COLOR BLOCK//
+
+/*****Extras****/
+/*This is for unique or extraneous custom stylings of elements
+that would have been too much work to try and nest*/
+
+	#whiteblock {
+		background-color: #ffffff;
+		padding-bottom: 20px;
+		color: #6B7F92;
+		height: 375px;
+	}
+	
+	#backgroundblock {
+		color: #ffffff;
+		padding-bottom: 50px;
+		height: 350px;
+		hr {
+			background-color: #ffffff;
+			margin-top: -1em;
+			height: 3px;
+			border-width: 0;
+		}
+	}
+	
+	.otherHRLines {
+		height: 3px; 
+		background-color: #6B7F92; 
+	}
+	
 
 }
