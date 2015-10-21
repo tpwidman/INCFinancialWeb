@@ -1,6 +1,5 @@
 [plat-control="home-vc"] {
     text-align: center;
-    
 	.flex-container {
 		display: -webkit-flex;
 		display:    -moz-flex;
@@ -9,6 +8,32 @@
 		justify-content: space-around;
         padding-top: 2em;
 	}
+    .line{
+        width: 0%;
+        opacity: 0;
+        background-color: black;
+    }
+    .main-icons {
+        padding: 3em;
+        .icon {
+            height: 75px;
+           }
+    }
+    .hover-me:hover{
+        
+            hr.line{
+                opacity:1;
+                width:65%;
+                transition: all .7s  ease-in-out;
+            }
+            .icon{
+                background-color: rgba(255,255,255,0.55);
+                border-radius:150px;
+                z-index:1;
+                transition: all .5s  ease-in-out;
+            }
+    }
+    
 	.factslist{
 		#1, #2, #3{
 		border-left: 1px solid black;
@@ -21,8 +46,8 @@
 		
 	}
 	.row.flex-container img:hover{
-	background-color: rgba(255,255,255,0.25);
-  	border-radius: 50px;
+	      background-color: rgba(555,76,255,0.25);
+  	      border-radius: 50px;
   
 }
 	
@@ -31,17 +56,6 @@
         border: 0;
         height: 3px;
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));
-    }
-    .main-icons {
-        padding: 3em;
-        .icon {
-            height: 75px;
-        }
-        .icon:hover {
-            background-color: rgba(255,255,255,0.15);
-            border-radius: 50%;
-            height: 75px;
-        }
     }
     .options {
         padding: 2em;
