@@ -2,35 +2,46 @@
 <div class="row">
 <!--formally <div class="PortfolioHeader">-->
 	<div class="col-dsk-6 col-phn-12" id="TestimonialsBlock">
-		<li><img src="../images/icons/INC logo 2.svg" /></li>
-		<li>Testimonials</li>
+		<div class="flex-container">
+            <img src="../images/icons/INC logo 2.svg" height="50px"/>
+            <h2>Testimonials</h2>
+        </div>
 	</div>
 	<div class="col-dsk-6 col-phn-12" id="FriendsBlock">
-		<li><img src="../images/icons/INC Logo 3.svg" /></li>
-		<li>Friends of</li>
+        <div class="flex-container">
+            <img src="../images/icons/INC Logo 3.svg" height="50px"/>
+            <h2>Friends of INC</h2>
+        </div>
 	</div>
 </div>
-<!--1st Testimonial block-->
+<!--1st Testimonial block-- START OF FLEXBOXING FOR TESTIMONIALS -->
 <div class="TestimonialColorBlock" id="whiteblock">
-	<div class="Testimonial">
-		<div class="nameofCustomer">
-			<h3>Gwyn & Sam Moore <span class="title">// Owners</span><img id="logo1" src="../images/icons/INC Logo 4.svg"/></h3>
-		</div>
-		<hr class="lineAfterCustomer">
-		<div class="imageofCustomer">
-			<img class="imageofCustomer" src="../images/Testimonial pic 1.png" />
-		</div>
-		<div class="TestimonalWords">
-			<p> “I was really impressed with how INC Financial presented the Infinite Banking Concept through the INC Wealth Strategy
-				but have been even more impressed since I put the concept to work for me and my family.</p>
-			<p>If there was one thing I would change, it would be starting much sooner than I did. I would have liked to have known about
-				this 30 years ago.”</p>
-		</div>
-	</div>
-	<!--<br>
-	<br>
-	<!--<hr class="otherHRLines">-->
+    <div class="row">
+        <div class="Testimonial">
+            <div class="nameofCustomer">
+                <div class="col-dsk-12 col-tab-12 col-phn-12" id="underline">
+                    <h3>Gwyn & Sam Moore <span class="title">// Owners</span></h3>
+                    <!--<img id="logo1" src="../images/icons/INC Logo 4.svg"/>-->
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="row Testimonial">
+        <div class="col-dsk-6 col-tab-12 col-phn-12">
+            <div class="flex-container">
+                <img src="../images/Testimonial pic 1.png" class="image"/>
+            </div>
+        </div>
+        <div class="TestimonalWords">
+            <div class="col-dsk-6 col-tab-12 col-phn-12">
+                <p> “I was really impressed with how INC Financial presented the Infinite Banking Concept through the INC Wealth Strategy but have been even more impressed since I put the concept to work for me and my family.</p>
+                <p>If there was one thing I would change, it would be starting much sooner than I did. I would have liked to have known about this 30 years ago.”</p>
+            </div>
+        </div>
+    </div>
 </div>
+<!-- END OF FLEXBOXING AND GRID SYSTEM IMPLEMENTATION -->
+
 <!--2nd Testimonial Block: Editor's Note: Should have no background, and white font'-->
 <div class="TestimonialColorBlock" id="backgroundblock">
 	<div class="Testimonial">
