@@ -2,12 +2,13 @@
 
 font-family: 'Gotham-Medium';
 
+/*Basic Styling for all Bio Divs*/
 .Bio {
 		max-width: 600px;
 		margin: auto;
 		
 		.nameofVIP {
-			color: black;
+			color: #ffffff;
 			
 				.title{
 					font-weight: 100;
@@ -17,65 +18,85 @@ font-family: 'Gotham-Medium';
 				#logo1 {
 					height: 50px;
 					width: 50px;
-					background-color: black;
 					margin-left: 190px;
+					float: right;
 					}
 				#logo2 {
-					height: 50px;
+					height: 30px;
 					width: 50px;
-					background-color: black;
 					margin-left: 235px;
+					margin-top: 10px;
 					}
 				#logo3 {
 					height: 50px;
 					width: 50px;
-					background-color: black;
 					margin-left: 115px;
 					}
 		}
-		hr {
+		.standardWhiteLine {
 			margin-top: -1em;
+			height: 3px;
+			background-color: #ffffff;
+			border-width: 0;
 		}
 			
 		.imageofVIP{
 			height: 250x;
 			width: 275px;
 			float: left;
-			margin: 0 0 10px 10px;
+			margin: 0 25px 5px 10px;
 		}
 }
 
-#Bio2 {
-		color: #6B7F92;
+//Custom Styling for 2nd Bio Div//
+.Bio2Colored-BG { 
+	background-color: #ffffff;
+	padding-top: 2px;
+	padding-bottom: 20px;
+	#Bio2 {
+		color: #6B7F92;	
+	}
+	#standardBlueLine {
+		background-color: #6B7F92;
+		border-width: 0;
+		height: 3px;
+		margin-top: -1em;
+	}
 }
-
-.InfiniteBanking {
-		max-width: 600px;
-		margin: auto;
+/*Infinite Banking Styling */
+.InfiniteDivColored-BG {
+		background-color: #ffffff;
+		//height: 650px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	.InfiniteBanking {
+			max-width: 600px;
+			margin: auto;
 		
-		#IBTitle {
-			background-color: #768274;
-			color: #ffffff;
-			padding-left: 10px;
-		}
-		
-		#IBhr {
-			background-color: #768274;
-		}
-		p {
-			color: #768274;
-		}
-		
-		#IMSBold {
-			font-weight: 700;
-		}
-		
-		.books {
-			font-weight: 700;
-		} 		
+			#IBTitle {
+				background-color: #768274;
+				color: #ffffff;
+				padding-left: 10px;
+			}
+			
+			#IBhr {
+				background-color: #768274;
+			}
+			p {
+				color: #768274;
+			}
+			
+			#IMSBold {
+				font-weight: 700;
+			}
+			
+			.books {
+				font-weight: 700;
+			}
+	} 		
 }
 //Styling for The Book Section//	
-.BookDiv {
+.BookDivColored-BG {
 		background-color: #768274;
 		padding-top: 1px;
 		padding-bottom: 10px;
@@ -91,38 +112,37 @@ font-family: 'Gotham-Medium';
 				letter-spacing: -1px;
 		}
 		
-		.bookHr {
-			color: #ffffff;
+		#FirstHR {
 			margin-top: -2em;
 			height: 2.5px;
 			border-width: 0;
 			background-color: #ffffff;
 		}
 	
-	#NameOfTheBook {
-			font-style: italic;
-			font-size: 30px;
-			margin-top: -5px;
-	}
-	
-	#author {
-			margin-top: -25px;
-			font-weight: 300;
-			font-size: 22px;
-	}
-	
-	.container{
-		span{
-			font-weight: bold;
+		#NameOfTheBook {
+				font-style: italic;
+				font-size: 30px;
+				margin-top: -5px;
 		}
-	}
 	
-	/*.bookHr {
-			color: #ffffff;
+		#author {
+				margin-top: -25px;
+				font-weight: 300;
+				font-size: 22px;
+		}
+		
+		#SecondHR {
 			height: 2.5px;
 			border-width: 0;
-			background-color: #ffffff;
-		}*/
+			background-color: #ffffff;	
+		}
+	
+		.container{
+			span{
+				font-weight: bolder;
+				font-style: italic;
+			}
+		}
 	}
 .buybook {
 	text-align: center;
@@ -132,12 +152,6 @@ font-family: 'Gotham-Medium';
 		margin-bottom: 15px;
 	}
 	 #button {
-		 //how do I get this button underneath the icon//
-		 //how do I get this button more box shaped//
-		 //need to add font//
-		// margin-right: 300px;
-		// margin-top: 20px;
-		// margin: 0 auto;
 		outline: 0;
 		border: 2px solid #ffffff;
 		font-size:20px;
@@ -153,51 +167,59 @@ font-family: 'Gotham-Medium';
 		
 	}
 	
-	#FirstLine {
+	#ThirdLine {
 		width: 616px;
+		margin-top: 2em;
 		margin-bottom: 40px;
+		height: 2.5px;
+		border-width: 0;
+		background-color: #ffffff;
 	}
 	
-	#SecondLine {
+	#FourthLine {
 		width: 800px;
 		margin-bottom: 40px;
 	}
 }
 }
-.AdditionalResources {
-		max-width: 600px;
-		margin: auto;
-	img {	
-		margin-top: 20px;
-		margin-right: 10px;
-		background-color: #768274;
-		height: 50px;
-		width: 50px;
-		float: left;
+.AdditionalResourcesColored-BG {
+	background-color: #ffffff;
+	height: 275px;
+	.AdditionalResources {
+			max-width: 600px;
+			margin: auto;
+		img {	
+			margin-top: 20px;
+			margin-right: 10px;
+			background-color: #768274;
+			height: 50px;
+			width: 50px;
+			float: left;
+		}
+		#button {
+			margin-top: 20px;
+			margin-right: 25px;
+			outline: 0;
+			background-color: white;
+			border: 3px solid #768274;
+			font-size:15px;
+			font-weight: bold;
+			color: #768274;
+			text-align:center;
+			transition-duration: 0.25s;
+		}
+		
+		.AdditionalResourcesList{
+			list-style: none;
+			font-weight: bolder;
+			color: #768274;
+			margin-left: 25px;
+		}
+		hr {
+			color: #768274;
+			margin-bottom: 20px;
+		}
+		
 	}
-	#button {
-		margin-top: 20px;
-		margin-right: 25px;
-		outline: 0;
-		background-color: white;
-		border: 3px solid #768274;
-		font-size:15px;
-		font-weight: bold;
-		color: #768274;
-		text-align:center;
-		transition-duration: 0.25s;
-	}
-	
-	.AdditionalResourcesList{
-		list-style: none;
-		font-weight: bolder;
-		color: #768274;
-		margin-left: 25px;
-	}
-	hr {
-		color: #768274;
-		margin-bottom: 20px;
-	}
-	
 }
 }

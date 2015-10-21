@@ -7,9 +7,6 @@ export default class HomeViewControl extends BaseViewControl {
 
     context: any = {};
 
-    connect(){
-        this.navigator.navigate(ConnectViewControl);
-    }
 }
 
 register.viewControl('home-vc', HomeViewControl);
