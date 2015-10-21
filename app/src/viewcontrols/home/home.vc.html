@@ -1,23 +1,58 @@
 <!-- Start of Action buttons -->
 <div class="row main-icons">
     <div class="col-dsk-4 col-tab-4 col-phn-12">
-        <div class="flex-container">
-            <img src="../images/icons/water drop icon.svg" class="icon">
+        <div plat-tap="expandCreate">
+            <div class="flex-container">
+                <img src="../images/icons/water drop icon.svg" class="icon" plat-tap="expandCreate()">
+            </div>
+            <h1>Create it.</h1>
         </div>
-        <h1>Create it.</h1>
-        <plat-visible></plat-visible>
+        <span class="easeDown" plat-visible="{{showCreate}}">
+            <p>The foundation of creating wealth through the INC Wealth Strategy is storing money in a properly designed whole life insurance policy.</p>
+            <h3>Creating Wealth for You</h3>
+            <p>Your money will continue to grow inside your policy even while you access for other purposes. This allows you to earn on a largervolume of dollars than you can save. On the backend, your policy will generate a tremendous amount of tax-free retirement income.</p>
+            <h3>Creating Generational Wealth</h3>
+            <p>While it’s not the primary purpose of the policies, by storing money in a life insurance policy creates a death benefit for your heirs. Using the cash value to finance the purchases of future generations keeps the interest that would have been paid to others in the family.</p>
+            <div class="collapse" plat-tap="collapseCreate">
+                <img src="../images/icons/minus sign circle.svg" class="icon">
+            </div>
+        </span>
     </div>
     <div class="col-dsk-4 col-tab-4 col-phn-12">
-        <div class="flex-container">
-            <img src="../images/icons/leaf icon.svg" class="icon">
+        <div plat-tap="expandGrow">
+            <div class="flex-container">
+                <img src="../images/icons/leaf icon.svg" class="icon">
+            </div>
+            <h1>Grow it.</h1>
         </div>
-        <h1>Grow it.</h1>
+        <span class="easeDown" plat-visible="{{showGrow}}">
+            <p>The foundation of creating wealth through the INC Wealth Strategy is storing money in a properly designed whole life insurance policy.</p>
+            <h3>Creating Wealth for You</h3>
+            <p>Your money will continue to grow inside your policy even while you access for other purposes. This allows you to earn on a largervolume of dollars than you can save. On the backend, your policy will generate a tremendous amount of tax-free retirement income.</p>
+            <h3>Creating Generational Wealth</h3>
+            <p>While it’s not the primary purpose of the policies, by storing money in a life insurance policy creates a death benefit for your heirs. Using the cash value to finance the purchases of future generations keeps the interest that would have been paid to others in the family.</p>
+            <div class="collapse" plat-tap="collapseGrow">
+                <img src="../images/icons/minus sign circle.svg" class="icon">
+            </div>
+        </span>
     </div>
     <div class="col-dsk-4 col-tab-4 col-phn-12">
-        <div class="flex-container">
-            <img src="../images/icons/sun icon.svg" class="icon">
+        <div plat-tap="expandKeep">
+            <div class="flex-container">
+                <img src="../images/icons/sun icon.svg" class="icon">
+            </div>
+            <h1>Keep it.</h1>
         </div>
-        <h1>Keep it.</h1>
+        <span class="easeDown" plat-visible="{{showKeep}}">
+            <p>The foundation of creating wealth through the INC Wealth Strategy is storing money in a properly designed whole life insurance policy.</p>
+            <h3>Creating Wealth for You</h3>
+            <p>Your money will continue to grow inside your policy even while you access for other purposes. This allows you to earn on a largervolume of dollars than you can save. On the backend, your policy will generate a tremendous amount of tax-free retirement income.</p>
+            <h3>Creating Generational Wealth</h3>
+            <p>While it’s not the primary purpose of the policies, by storing money in a life insurance policy creates a death benefit for your heirs. Using the cash value to finance the purchases of future generations keeps the interest that would have been paid to others in the family.</p>
+            <div class="collapse" plat-tap="collapseKeep">
+                    <img src="../images/icons/minus sign circle.svg" class="icon">
+            </div>
+        </span>
     </div>
 </div>
 
