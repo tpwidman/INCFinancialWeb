@@ -16,8 +16,8 @@ export default class NavbarTemplateControl extends ui.TemplateControl {
     };
   
 
-
-    el = document.getElementsByTagName('body')[0]
+    
+   var el = document.getElementsByTagName('body')[0]
 
     function scroll() {
     };
