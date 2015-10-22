@@ -1,8 +1,9 @@
 [plat-control="about-vc"] {
-/*About Header*/
+/********About Header*******/
 	.row {
 		list-style: none;
         padding: 1em;
+		padding-bottom: 2em;
         .flex-container {
             display: flex;
             align-content: center;
@@ -18,32 +19,64 @@
 
 		}
 		#HowBlock {
-            font-family: 'Gotham-Book';
-
+			.flex-container {
+			h1 {
+			font-family: 'Gotham-Book';
+			font-weight: 100;
+			}
+			}
 			img {
 				margin-right: 10px;
 			}
 		}
 	}
 	/*End of About Header*/
-
-	//Bios//
-
+	
+/*********Story Block********/
+	#StoryRow {
+		list-style: none;
+        padding: 1em;
+		padding-bottom: 2em;
+		max-width: 65%;
+		margin: auto;
+        .flex-container {
+            display: flex;
+            align-content: flex-start;
+            align-items: flex-start;
+            justify-content: flex-start;
+            }
+		#StoryBlock {
+            font-family: 'Gotham-Bold';
+			h2 {
+				margin-top: 0em;
+				margin-bottom: 0em;
+			}
+			}
+		#StoryContent {
+            font-family: 'Gotham-Book';
+			p {
+				margin-top: 0em;
+			}
+			}
+	}
+	/*End of Story Block*/
+	
+/*******BIOS*******/
 	//Standard formating for all three divs//
-	.TestimonialColorBlock {
+	.BioColorBlock {
 
 
 		//Div for Testimonial Content//
 		.Testimonial {
 			max-width: 65%;
 			margin: auto;
-            .TestimonialWords {
+            .BioWords {
                 margin-left: 0.2em;
                 text-align: left;
             }
 
 			//Div for name of customer//
-			.nameofCustomer {
+			.nameofVIP {
 				font-family: 'Gotham-Bold';
                 #underline {
                     border-bottom: 3px solid #ffffff;
@@ -73,8 +106,6 @@
                 padding: 0.1em;
 				height: 250x;
 				width: 275px;
-				// float: left;
-				//margin: 0 25px 10px 10px;
 			}
 			//END OF IMAGE DIV//
 
@@ -88,9 +119,10 @@
 /*This is for unique or extraneous custom stylings of elements
 that would have been too much work to try and nest*/
 
-	#clearblock {
+	#FirstFrostBlock {
 		padding-bottom: 20px;
 		color: #ffffff;
+		background-color: fade(#ffffff,40%);
 	}
 
 	#whiteblock {
@@ -102,7 +134,7 @@ that would have been too much work to try and nest*/
 		}
 	}
 	
-	#almostclearblock {
+	#SecondFrostBlock {
 		background-color: fade(#ffffff,40%);
 	}
 	/*End of Extra for Testimonials*/
@@ -114,6 +146,7 @@ that would have been too much work to try and nest*/
 			.row {
 				max-width: 65%;
 				margin: auto;
+				padding-bottom: 0em;
 			}
 	//Div for Infinite Banking Content//	
 			.IBTitle {
@@ -184,7 +217,6 @@ that would have been too much work to try and nest*/
 					
 					
 					#content {
-						text-align: left;
 						font-size: 20px;
 						line-height: 110%;
 						
@@ -196,6 +228,36 @@ that would have been too much work to try and nest*/
            		 	}
 				}
 			}	
+			#BookIconAndButton {
+				padding-top: 20px;
+				text-align: center;
+				border-bottom: 3px solid #ffffff;
+				padding-bottom: 2em;
+				.BookLogo {
+				height: 100px;
+				width: 100px;
+				padding-bottom: 1em;
+				}
+				.buttonDiv {
+					background-color: #768274;
+					border-color: #768274;
+					padding-bottom: 1em;
+				}
+				button {
+					border: 2px solid #ffffff;
+					color: #ffffff;
+					background-color: #768274;
+					font-size: 16px;
+					font-weight: bold;
+					padding: 1em;
+					width: 220px;
+					transition-duration: 0.25s;
+					
+					&:hover {
+						background-color: fade(#ffffff, 40%);
+					}
+				}
+			}
 		}
 			
 	}
