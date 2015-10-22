@@ -1,12 +1,20 @@
 [plat-control="home-vc"] {
     text-align: center;
+    span {
+        font-family: 'Gotham-Black';
+        li {
+            font-size: 20px;
+        }
+        ul {
+            padding-bottom: 2em;
+        }
+    }
 	.flex-container {
 		display: -webkit-flex;
 		display:    -moz-flex;
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-around;
-        padding-top: 2em;
 	}
     .line{
         width: 0%;
@@ -14,7 +22,7 @@
         background-color: black;
     }
     .main-icons {
-        padding: 3em;
+        padding: 4em 3em 3em 3em;
         .min-icon{
             height: 75px;
             border-radius:150px;
@@ -36,12 +44,12 @@
                 
             }
             .icon{
-                background-color: rgba(255,255,255,0.55);
+                background-color: rgba(255,255,255,0.5);
                 z-index:1;
                 transition: all .5s  ease-in-out;
             }
             .min-icon{
-                background-color: rgba(255,255,255,0.55);
+                background-color: rgba(255,255,255,0.5);
                 background-clip: 10px;
                 z-index:1;
                 transition: all .5s  ease-in-out;
@@ -54,7 +62,7 @@
 
 	}
 	.row.flex-container img:hover{
-	      background-color: rgba(555,76,255,0.25);
+	      background-color: rgba(555,76,255,0.3);
   	      border-radius: 50px;
     }
 
@@ -70,6 +78,9 @@
         width: 60%;
         padding-bottom: 4em;
         margin: 0 auto;
+        p {
+            font-family: 'Gotham-Black';
+        }
     }
     .points {
         padding: 2em;
@@ -91,13 +102,13 @@
         }
     }
     .easeDown {
-        overflow-y: hidden;
-        max-height: 300px;
-        transition: all 3s ease-in-out;
+        text-align: left;
+        padding: 1em;
     }
     .collapse {
         border-top: 3px solid #fff;
         border-bottom: 3px solid #fff;
+        text-align: center;
     }
     button {
         padding: 1.5em;
@@ -108,8 +119,9 @@
         text-decoration: none;
         text-transform: uppercase;
         font-weight: bold;
+        font-family: 'Gotham-Medium';
     }
        button:hover{
-        background-color: rgba(255,255,255,0.2);
+        background-color: rgba(255,255,255,0.3);
     }
 }
