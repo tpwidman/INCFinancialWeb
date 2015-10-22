@@ -1,242 +1,208 @@
 [plat-control="about-vc"] {
+/*About Header*/
+	.row {
+		list-style: none;
+        padding: 1em;
+        .flex-container {
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            }
+		#TheTeamBlock {
+            font-family: 'Gotham-Bold';
+            text-decoration: underline;
+			img {
+				margin-right:10px;
+			}
 
-font-family: 'Gotham-Medium';
+		}
+		#HowBlock {
+            font-family: 'Gotham-Book';
 
-/*Basic Styling for all Bio Divs*/
-.Bio {
-		max-width: 600px;
-		margin: auto;
-		
-		.nameofVIP {
-			color: #ffffff;
-			max-width: 100%;
-			
-				.title{
-					font-weight: 100;
-					font-family: 'Gotham-Book';
-				}
-		
+			img {
+				margin-right: 10px;
+			}
+		}
+	}
+	/*End of About Header*/
+
+	//Bios//
+
+	//Standard formating for all three divs//
+	.TestimonialColorBlock {
+
+
+		//Div for Testimonial Content//
+		.Testimonial {
+			max-width: 65%;
+			margin: auto;
+            .TestimonialWords {
+                margin-left: 0.2em;
+                text-align: left;
+            }
+
+			//Div for name of customer//
+			.nameofCustomer {
+				font-family: 'Gotham-Bold';
+                #underline {
+                    border-bottom: 3px solid #ffffff;
+                }
+
+				.title {
+						font-weight: 100;
+						font-family: 'Gotham-Book';
+						}
+
 				#logo1 {
-					height: 40px;
-					width: 50px;
-					float: right;
-					max-width: 100%;
-					margin-bottom: 10px;
-					margin-left: 250px;
-					position: absolute;
-					}
+						height: 30px;
+						width: 30px;
+						}
 				#logo2 {
-					height: 30px;
-					width: 50px;
-					float: right;
-					
-					
-					}
+						height: 50px;
+						width: 50px;
+						}
 				#logo3 {
-					height: 50px;
-					width: 50px;
-					margin-left: 115px;
-					}
-		}
-		.standardWhiteLine {
-			max-width: 100%;
-			margin-top: 1em;
-			height: 3px;
-			background-color: #ffffff;
-			border-width: 0;
-					}
-		.imageofVIP {
-			height: 250x;
-			width: 275px;
-			float: left;
-			margin: 0 25px 5px 10px;
-		}
-}
+						height: 50px;
+						width: 50px;
+						}
+            }
 
-//Custom Styling for 2nd Bio Div//
-.Bio2Colored-BG { 
-	background-color: #ffffff;
-	padding-top: 2px;
-	padding-bottom: 20px;
-	#Bio2 {
-		color: #6B7F92;	
+			//Div for the image of the customer//
+			.image {
+                padding: 0.1em;
+				height: 250x;
+				width: 275px;
+				// float: left;
+				//margin: 0 25px 10px 10px;
+			}
+			//END OF IMAGE DIV//
+
+		}
+		//END OF TESTIMONIAL DIV//
+
 	}
-	#standardBlueLine {
-		background-color: #6B7F92;
-		border-width: 0;
-		height: 3px;
-		//margin-top: -1em;
-	}
-}
-/*Infinite Banking Styling */
-.InfiniteDivColored-BG {
-		background-color: #ffffff;
-		//height: 650px;
-		padding-top: 20px;
+	//END OF TESTIMONIAL COLOR BLOCK//
+
+/*****Extras****/
+/*This is for unique or extraneous custom stylings of elements
+that would have been too much work to try and nest*/
+
+	#clearblock {
 		padding-bottom: 20px;
-	.InfiniteBanking {
-			max-width: 600px;
-			margin: auto;
-		
-			#IBTitle {
-				background-color: #768274;
-				color: #ffffff;
-				padding-left: 10px;
-			}
-			
-			#FirstLine {
-				background-color: #768274;
-				height: 3px;
-				border-width: 0;
-			}
-			p {
-				color: #768274;
-			}
-			
-			#IMSBold {
-				font-weight: 700;
-			}
-			
-			.books {
-				font-weight: 700;
-			}
-	} 		
-}
-//Styling for The Book Section//	
-.BookDivColored-BG {
-		background-color: #768274;
-		padding-top: 1px;
-		padding-bottom: 10px;
 		color: #ffffff;
-	.BookContentDiv {
-			max-width: 600px;
-			margin: auto;
-			margin-bottom: 0;
-			
-		h1 {
-				font-size: 60px;
-				font-weight: bolder;
-				letter-spacing: -1px;
-		}
+	}
+
+	#whiteblock {
+		color: #6B7F92;
+		background-color: #ffffff;
 		
-		#FirstLine {
-			margin-top: -2em;
-			height: 2.5px;
-			border-width: 0;
+		#SecondBlockUnderline {
+			border-bottom: 3px solid #6B7F92; 
+		}
+	}
+	
+	#almostclearblock {
+		background-color: fade(#ffffff,40%);
+	}
+	/*End of Extra for Testimonials*/
+
+		
+	/*Infinite Banking Styling*/
+	.IBColorBlock {
 			background-color: #ffffff;
-		}
-	
-		#NameOfTheBook {
-				font-style: italic;
-				font-size: 30px;
-				margin-top: -5px;
-		}
-	
-		#author {
-				margin-top: -25px;
-				font-weight: 300;
-				font-size: 22px;
-		}
-		
-		#SecondLine {
-			height: 2.5px;
-			border-width: 0;
-			background-color: #ffffff;	
-		}
-	
-		.container{
-			span{
-				font-weight: bolder;
-				font-style: italic;
+			.row {
+				max-width: 65%;
+				margin: auto;
 			}
-		}
+	//Div for Infinite Banking Content//	
+			.IBTitle {
+				color: #ffffff;
+
+				
+				#IBTitle2 {
+				border-bottom: 3px solid #768274; 
+
+					h3 {
+						
+						background-color: #768274;
+						padding: 0.2em;
+
+					}
+				}
+			}
+			
+			.IBWords {
+                margin-left: 0.2em;
+                text-align: left;
+				color: #768274;
+            }
+			
+			span {
+				font-weight: bolder;
+			}
 	}
-.buybook {
-	text-align: center;
-	img {
-		height: 100px;
-		width: 100px;
-		margin-bottom: 15px;
-	}
-	 #button {
-		width: 200px;
-		padding: 1em;
-        font-size: 16px;
-        background: transparent;
-        border: 2px solid #fff;
-        color: white;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
+	/*End of Infinite Banking Styling*/
+	 
+	/*Book Section Styling*/
+	.BookColorBlock {
+			background-color: #768274;
+			.row {
+				max-width: 65%;
+				margin: auto;
+			}
+	//Div for Infinite Banking Content//	
+			.BookTitle {
+				color: #ffffff;
 		
-		&:hover {
-			background-color: #ffffff;
-			color: #768274;
+
+					h2 {
+						font-family: 'Gotham-Bold';
+						font-weight: bolder;
+						font-size: 62px;
+						border-bottom: 3px solid #ffffff; 		
+						margin-top: 0em;
+						margin-bottom: 0em;		
+				}
+					h3 {
+						font-family: 'Gotham-Bold';
+						font-size: 30px;
+						font-style: italic;
+						margin-top: 0em;
+						margin-bottom: 0em;
+						line-height: 90%;
+						letter-spacing: 0px;
+					}
+					#author  {
+						margin-top: 0em;
+						margin-bottom: 0em;
+						font-size: 23px;
+					}
+					
+					#BookInfo {
+						border-bottom: 3px solid #ffffff; 
+					
+					
+					#content {
+						text-align: left;
+						font-size: 20px;
+						line-height: 110%;
+						
+						span {
+							font-weight: bold;
+							font-style: italic;
+							font-family: 'Gotham-Black';
+						}
+           		 	}
+				}
+			}	
 		}
-		
+			
 	}
+
+	/*End of Book Section Styling*/
+	 
 	
-	#ThirdLine {
-		width: 616px;
-		margin-top: 2em;
-		margin-bottom: 40px;
-		height: 3px;
-		border-width: 0;
-		background-color: #ffffff;
-	}
+		
+			
 	
-	#FourthLine {
-		height: 3px;
-		border-width: 0;
-		width: 800px;
-		background-color: #ffffff;
-	}
-}
-}
-.AdditionalResourcesColored-BG {
-	background-color: #ffffff;
-	height: 275px;
-	.AdditionalResources {
-			max-width: 600px;
-			margin: auto;
-		img {	
-			margin-top: 20px;
-			margin-right: 10px;
-			background-color: #768274;
-			height: 50px;
-			width: 50px;
-			float: left;
-		}
-		#button {
-			width: 250px;
-			padding: 0.9em;
-        	font-weight: bold;
-			font-size:15px;
-			text-align:center;
-			margin-top: 20px;
-			background-color: white;
-			border: 3px solid #768274;
-			color: #768274;
-		}
-		
-		.AdditionalResourcesList{
-			list-style: none;
-			font-weight: bolder;
-			color: #768274;
-			margin-left: 25px;
-		}
-		#FirstLine {
-			background-color: #768274;
-			margin-bottom: 20px;
-			height: 3px;
-			border-width: 0;
-		}
-		#SecondLine {
-			background-color: #768274;
-			height: 3px;
-			border-width: 0;
-		}
-		
-	}
-}
-}
