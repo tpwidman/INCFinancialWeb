@@ -1,91 +1,80 @@
 [plat-control="navbar"] {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
     color: #fff;
-        -moz-animation-name: dropHeader;
-        -moz-animation-iteration-count: 1;
-        -moz-animation-timing-function: ste;
-        -moz-animation-duration: 0.4s;
-    
-        -webkit-animation-name: dropHeader;
-        -webkit-animation-iteration-count: 1;
-        -webkit-animation-timing-function: linear;
-        -webkit-animation-duration: 0.4s;
-    
-        animation-name: dropHeader;
-        animation-iteration-count: 1;
-        animation-timing-function: linear;
-        animation-duration: 0.4s;
-        
-        @-moz-keyframes dropHeader {
-             0% {-moz-transform: translateY(-800px);}
-             100% {-moz-transform: translateY(0);}
-             }
-             
-        @-webkit-keyframes dropHeader {
-            0% {-webkit-transform: translateY(-800px);}
-            100% {-webkit-transform: translateY(0);}
-            }
-            
-        @keyframes dropHeader {
-            0% {transform: translateY(-800px);}
-            100% {transform: translateY(0);}
-            }
+    background-color: rgba(109, 134, 146, 0.8);
+        // -moz-animation-name: dropHeader;
+        // -moz-animation-iteration-count: 1;
+        // -moz-animation-timing-function: ste;
+        // -moz-animation-duration: 0.4s;
 
-    text-transform: uppercase;
-        
+        // -webkit-animation-name: dropHeader;
+        // -webkit-animation-iteration-count: 1;
+        // -webkit-animation-timing-function: linear;
+        // -webkit-animation-duration: 0.4s;
+
+        // animation-name: dropHeader;
+        // animation-iteration-count: 1;
+        // animation-timing-function: linear;
+        // animation-duration: 0.4s;
+
+        // @-moz-keyframes dropHeader {
+        //      0% {-moz-transform: translateY(-800px);}
+        //      100% {-moz-transform: translateY(0);}
+        //      }
+
+        // @-webkit-keyframes dropHeader {
+        //     0% {-webkit-transform: translateY(-800px);}
+        //     100% {-webkit-transform: translateY(0);}
+        //     }
+
+        // @keyframes dropHeader {
+        //     0% {transform: translateY(-800px);}
+        //     100% {transform: translateY(0);}
+        //     }
+
         .logo {
-            width: 100px;
-            height: 100px;
-            margin: 0 auto;
-            padding-top: 30px;
-            
-                -moz-animation-name: dropHeader;
-                -moz-animation-iteration-count: 1;
-                -moz-animation-timing-function: ease-in;
-                -moz-animation-duration: 0.4s;
-            
-                -webkit-animation-name: dropHeader;
-                -webkit-animation-iteration-count: 1;
-                -webkit-animation-timing-function: ease-in;
-                -webkit-animation-duration: 0.4s;
-            
-                animation-name: dropHeader;
-                animation-iteration-count: 1;
-                animation-timing-function: ease-in;
-                animation-duration: 0.4s;
-                
-                @-moz-keyframes dropHeader {
-                    0% {-moz-transform: translateY(-800px);}
-                    100% {-moz-transform: translateY(0);}
-                    }
-                    
-                @-webkit-keyframes dropHeader {
-                    0% {-webkit-transform: translateY(-800px);}
-                    100% {-webkit-transform: translateY(0);}
-                    }
-                    
-                @keyframes dropHeader {
-                    0% {transform: translateY(-800px);}
-                    100% {transform: translateY(0);}
-                    }
-              }
-        .flex-container {
-            border-top: 3px solid #fff;
-            border-bottom: 3px solid #fff;
-        /* flexbox setup */
+            height: 40px;
+                // -moz-animation-name: dropHeader;
+                // -moz-animation-iteration-count: 1;
+                // -moz-animation-timing-function: ease-in;
+                // -moz-animation-duration: 0.4s;
+
+                // -webkit-animation-name: dropHeader;
+                // -webkit-animation-iteration-count: 1;
+                // -webkit-animation-timing-function: ease-in;
+                // -webkit-animation-duration: 0.4s;
+
+                // animation-name: dropHeader;
+                // animation-iteration-count: 1;
+                // animation-timing-function: ease-in;
+                // animation-duration: 0.4s;
+
+                // @-moz-keyframes dropHeader {
+                //     0% {-moz-transform: translateY(-800px);}
+                //     100% {-moz-transform: translateY(0);}
+                //     }
+
+                // @-webkit-keyframes dropHeader {
+                //     0% {-webkit-transform: translateY(-800px);}
+                //     100% {-webkit-transform: translateY(0);}
+                //     }
+
+                // @keyframes dropHeader {
+                //     0% {transform: translateY(-800px);}
+                //     100% {transform: translateY(0);}
+                //     }
+        }
+       .flex-container {
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-around;
-
+            align-items: center;
+            align-content: center;
+        }
         .flex-item {
             color: #fff;
             list-style-type: none;
-            padding: 20px;
-        }
-        .flex-item:hover {
-            background-color: rgba(255,255,255,0.3);
-        }
-        .flex-item:active {
-            background-color: rgba(255,255,255,0.3);
         }
     }
-}

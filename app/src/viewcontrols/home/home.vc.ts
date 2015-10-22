@@ -20,6 +20,9 @@ export default class HomeViewControl extends BaseViewControl {
     expandKeep() {
         this.context.showKeep = true
     }
+    scrollToTop() : void {
+        
+    }
     collapseCreate() {
         if (this.context.showCreate = true) {
             this.context.showCreate = false

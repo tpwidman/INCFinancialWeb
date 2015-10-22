@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 55.7 41.9" style="enable-background:new 0 0 55.7 41.9;" xml:space="preserve">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-277 376.1 55.7 41.9" style="enable-background:new -277 376.1 55.7 41.9;" xml:space="preserve">
 <style type="text/css">
-	.st0{opacity:0.93;}
+	.st0{fill:#231F20;}
 	.st1{fill:#FFFFFF;}
-	.st2{opacity:0.93;fill:#FFFFFF;}
-	.st3{font-family:'Gotham-Black';}
-	.st4{font-size:7.5238px;}
+	.st2{font-family:'Gotham-Black';}
+	.st3{font-size:6.8018px;}
 </style>
-<g class="st0">
-	<path class="st1" d="M19.8,7.3v24.3h15.9V7.3H19.8z M31.4,28.2h-1.9l-3.4-4.3v4.3h-2.2v-7.9h2l3.3,4.2v-4.2h2.2V28.2z"/>
+<g id="Layer_2">
+	<rect x="-277" y="376.1" class="st0" width="55.7" height="41.9"/>
 </g>
-<g class="st0">
-	<path class="st1" d="M0.5,16.3v15.3h15.9V16.3H0.5z M9.4,28.2H7.2v-7.9h2.2V28.2z"/>
+<g id="Layer_1">
+	<g>
+		<path class="st1" d="M-257.3,385v22h14.4v-22H-257.3z M-246.8,403.9h-1.7l-3.1-3.9v3.9h-2v-7.2h1.8l2.9,3.8v-3.8h2V403.9z"/>
+	</g>
+	<g>
+		<path class="st1" d="M-274.8,393.1v13.8h14.4v-13.8H-274.8z M-266.7,403.9h-2v-7.2h2V403.9z"/>
+	</g>
+	<g>
+		<path class="st1" d="M-239.2,378.4v28.6h14.4v-28.6H-239.2z M-231.8,404c-2,0-3.7-1.6-3.7-3.7v0c0-2.1,1.6-3.7,3.8-3.7
+			c1.5,0,2.4,0.6,3,1.5l-1.5,1.2c-0.4-0.5-0.9-0.8-1.6-0.8c-1,0-1.7,0.8-1.7,1.9v0c0,1.1,0.7,1.9,1.7,1.9c0.7,0,1.2-0.3,1.6-0.9
+			l1.5,1.1C-229.3,403.3-230.2,404-231.8,404z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 -275.1903 415.0666)" class="st1 st2 st3">FINANCIAL</text>
 </g>
-<g class="st0">
-	<path class="st1" d="M39.8,0v31.6h15.9V0H39.8z M48,28.4c-2.3,0-4.1-1.7-4.1-4.1v0c0-2.3,1.8-4.1,4.2-4.1c1.6,0,2.7,0.7,3.4,1.7
-		l-1.7,1.3c-0.5-0.6-1-0.9-1.7-0.9c-1.1,0-1.9,0.9-1.9,2.1v0c0,1.2,0.8,2.1,1.9,2.1c0.8,0,1.3-0.4,1.8-1l1.7,1.2
-		C50.7,27.6,49.7,28.4,48,28.4z"/>
-</g>
-<text transform="matrix(1 0 0 1 -2.193451e-04 40.6087)" class="st2 st3 st4">FINANCIAL</text>
 </svg>
