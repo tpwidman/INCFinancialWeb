@@ -10,7 +10,7 @@ export default class HomeViewControl extends BaseViewControl {
         showGrow: false,
         showKeep: false
     };
-
+    
     expandCreate() {
         this.context.showCreate = true
     }
