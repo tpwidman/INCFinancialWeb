@@ -14,5 +14,5 @@ export default class NavbarTemplateControl extends ui.TemplateControl {
         connectView: ConnectViewControl,
         portfolioView: PortfolioViewControl
     };   
-}asdfkla;
+}
 register.control('navbar', NavbarTemplateControl);
