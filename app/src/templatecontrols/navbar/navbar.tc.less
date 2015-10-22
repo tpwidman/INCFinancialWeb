@@ -3,15 +3,15 @@
     z-index: 100;
     width: 100%;
     color: #fff;
-    background-color: rgba(109, 134, 146, 0);
-        -moz-animation-name: dropHeader;
-        -moz-animation-iteration-count: 1;
-        -moz-animation-timing-function: ste;
-        -moz-animation-duration: 0.4s;
+    background-color: rgba(109, 134, 146, 0.5);
+        // -moz-animation-name: dropHeader;
+        // -moz-animation-iteration-count: 1;
+        // -moz-animation-timing-function: ste;
+        // -moz-animation-duration: 0.4s;
 
-        -webkit-animation-name: dropHeader;
-        -webkit-animation-iteration-count: 1;
-        -webkit-animation-timing-function: linear;
+        // -webkit-animation-name: dropHeader;
+        // -webkit-animation-iteration-count: 1;
+        // -webkit-animation-timing-function: linear;
         // -webkit-animation-duration: 0.4s;
 
         // animation-name: dropHeader;
@@ -19,52 +19,23 @@
         // animation-timing-function: linear;
         // animation-duration: 0.4s;
 
-        // @-moz-keyframes dropHeader {
-        //      0% {-moz-transform: translateY(-800px);}
-        //      100% {-moz-transform: translateY(0);}
-        //      }
+        @-moz-keyframes dropHeader {
+              0% {-moz-transform: translateY(-800px);}
+              100% {-moz-transform: translateY(0);}
+              }
 
-        // @-webkit-keyframes dropHeader {
-        //     0% {-webkit-transform: translateY(-800px);}
-        //     100% {-webkit-transform: translateY(0);}
-        //     }
+        @-webkit-keyframes dropHeader {
+             0% {-webkit-transform: translateY(-800px);}
+             100% {-webkit-transform: translateY(0);}
+             }
 
-        // @keyframes dropHeader {
-        //     0% {transform: translateY(-800px);}
-        //     100% {transform: translateY(0);}
-        //     }
+         @keyframes dropHeader {
+             0% {transform: translateY(-800px);}
+             100% {transform: translateY(0);}
+             }
 
         .logo {
             height: 40px;
-                // -moz-animation-name: dropHeader;
-                // -moz-animation-iteration-count: 1;
-                // -moz-animation-timing-function: ease-in;
-                // -moz-animation-duration: 0.4s;
-
-                // -webkit-animation-name: dropHeader;
-                // -webkit-animation-iteration-count: 1;
-                // -webkit-animation-timing-function: ease-in;
-                // -webkit-animation-duration: 0.4s;
-
-                // animation-name: dropHeader;
-                // animation-iteration-count: 1;
-                // animation-timing-function: ease-in;
-                // animation-duration: 0.4s;
-
-                // @-moz-keyframes dropHeader {
-                //     0% {-moz-transform: translateY(-800px);}
-                //     100% {-moz-transform: translateY(0);}
-                //     }
-
-                // @-webkit-keyframes dropHeader {
-                //     0% {-webkit-transform: translateY(-800px);}
-                //     100% {-webkit-transform: translateY(0);}
-                //     }
-
-                // @keyframes dropHeader {
-                //     0% {transform: translateY(-800px);}
-                //     100% {transform: translateY(0);}
-                //     }
         }
        .flex-container {
             display: flex;
@@ -76,7 +47,7 @@
         .flex-item {
             color: #fff;
             list-style-type: none;
-            font-size: 12px;
+            font-size: 16px;
         }
         .slider{
             position: relative;
@@ -101,7 +72,7 @@
             background: whitesmoke;
             transition: width .5s ease;
         }
-        .sliding-u-l-r-l:hover:before {
+        .slider:hover:before {
             width: 100%;
             background: whitesmoke;
             transition: width .5s ease;
