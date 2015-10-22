@@ -13,7 +13,15 @@ export default class NavbarTemplateControl extends ui.TemplateControl {
         aboutView: AboutViewControl,
         connectView: ConnectViewControl,
         portfolioView: PortfolioViewControl
-    }
+    };
+  
+
+
+    el = document.getElementsByTagName('body')[0]
+
+    function scroll() {
+    };
 }
+
 
 register.control('navbar', NavbarTemplateControl);
