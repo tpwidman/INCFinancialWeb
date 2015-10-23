@@ -24,7 +24,7 @@
 			font-family: 'Gotham-Book';
 			font-weight: 100;
 			}
-			}
+		}
 			img {
 				margin-right: 10px;
 			}
@@ -33,6 +33,9 @@
 	/*End of About Header*/
 
 /*********Story Block********/
+	.StoryColorBlock {
+		color: #ffffff; 
+	}
 	#StoryRow {
 		list-style: none;
         padding: 1em;
@@ -78,9 +81,23 @@
 			//Div for name of customer//
 			.nameofVIP {
 				font-family: 'Gotham-Bold';
+				
+				.flex-icon {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-flow: row nowrap;
+                    align-content: center;
+                    align-items: center;
+                }
                 #underline {
                     border-bottom: 3px solid #ffffff;
-                }
+				}
+                	h2 {
+						margin-bottom: 0;
+						font-size: 1.7em;
+						letter-spacing: -2px;
+					}
+				}
 
 				.title {
 						font-weight: 100;
@@ -89,15 +106,9 @@
 
 				#logo1 {
 						height: 30px;
-						width: 30px;
 						}
 				#logo2 {
-						height: 50px;
-						width: 50px;
-						}
-				#logo3 {
-						height: 50px;
-						width: 50px;
+						height: 30px;
 						}
             }
 
@@ -111,7 +122,9 @@
 
 		}
 		//END OF TESTIMONIAL DIV//
-
+		p {
+			margin-top:0;
+		}
 	}
 	//END OF TESTIMONIAL COLOR BLOCK//
 
@@ -128,17 +141,19 @@ that would have been too much work to try and nest*/
 	#whiteblock {
 		color: #6B7F92;
 		background-color: #ffffff;
-
 		#SecondBlockUnderline {
 			border-bottom: 3px solid #6B7F92;
+			h3 {
+				margin-bottom: 0px;
+			}
+			
 		}
 	}
 
 	#SecondFrostBlock {
-
 		background-color: fade(#ffffff,40%);
 	}
-	/*End of Extra for Testimonials*/
+	/**********End of Extra for Testimonials**********/
 
 
 	/*Infinite Banking Styling*/
@@ -260,4 +275,3 @@ that would have been too much work to try and nest*/
 				}
 			}
     }
-}
