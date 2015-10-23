@@ -10,31 +10,37 @@ export default class HomeViewControl extends BaseViewControl {
         showGrow: false,
         showKeep: false
     };
-    
+
     expandCreate() {
-        this.context.showCreate = true
+        if(this.context.showCreate === true) {
+            this.context.showCreate = false;
+        } else if(this.context.showCreate === false) {
+            this.context.showCreate = true;
+        }
     }
     expandGrow() {
-        this.context.showGrow = true
+        if(this.context.showGrow === true) {
+            this.context.showGrow = false;
+        } else if(this.context.showGrow === false) {
+            this.context.showGrow = true;
+        }
     }
     expandKeep() {
-        this.context.showKeep = true
-    }
-
-    scrollToTop() : void {
-
+        if(this.context.showKeep === true) {
+            this.context.showKeep = false;
+        } else if(this.context.showKeep === false) {
+            this.context.showKeep = true;
+        }
     }
 
     collapseCreate() {
         if (this.context.showCreate = true) {
             this.context.showCreate = false;
-
         }
     }
     collapseGrow() {
         if (this.context.showGrow = true) {
             this.context.showGrow = false;
-
         }
     }
     collapseKeep() {

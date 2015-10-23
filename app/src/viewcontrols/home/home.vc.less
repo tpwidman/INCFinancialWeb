@@ -2,6 +2,7 @@
     text-align: center;
     span {
         font-family: 'Gotham-Black';
+
         li {
             font-size: 20px;
         }
@@ -16,11 +17,6 @@
 		flex-flow: row nowrap;
 		justify-content: space-around;
 	}
-    .line{
-        width: 0%;
-        opacity: 0;
-        background-color: black;
-    }
     .main-icons {
         padding: 4em 3em 3em 3em;
         .min-icon{
@@ -36,8 +32,9 @@
         hr.line{
             opacity:0;
             width:0%;
-            height:0px;
-            transition: all .7s  ease-in-out;   
+            height:2px;
+            transition: all .7s  ease-in-out;
+
         }
         .icon{
             background-color: rgba(255,255,255,0);
@@ -49,21 +46,15 @@
             background-clip: 10px;
             z-index:1;
             transition: all .5s  ease-in-out;
-            
-        }
-    }
-    
-    
-    .hover-me:hover{
 
+        }
+        &:hover{
             hr.line{
                 opacity: 1;
                 width: 45%;
-                border: 0;
                 height: 2px;
                 background-color: #fff;
                 transition: all .7s  ease-in-out;
-                
             }
             .icon{
                 background-color: rgba(255,255,255,0.5);
@@ -76,11 +67,12 @@
                 z-index:1;
                 transition: all .5s  ease-in-out;
             }
+        }
     }
 
 	.row3.flex-container img{
 		width: 50px;
-		border: 1px solid black;
+		border: px solid black;
 
 	}
 	.row.flex-container img:hover{
@@ -105,13 +97,36 @@
         }
     }
     .points {
-        padding: 2em;
+
         .stats {
             border-left: 3px solid #fff;
             border-right: 3px solid #fff;
             padding: 0em;
             margin: 2em;
             line-height: 80%;
+            h4{
+
+            }
+            .stretch{
+
+            }
+            h1{
+                font-size: 7em;
+
+
+            }
+            h1.tadSmaller{
+                font-size: 6em;
+            }
+            h2{
+
+            }
+            .stretch1{
+                letter-spacing: .5em;
+                margin:0 auto;
+                text-justify: inter-word;
+                width: 25vw;
+            }
         }
     }
     .nyt-list {
@@ -125,7 +140,11 @@
     }
     .easeDown {
         text-align: left;
-        padding: 1em;
+        margin-top: 0em;
+        padding: 0em 1em 1em 1em;
+        p {
+            padding-top: 0em;
+        }
         h3 {
             font-style: italic;
         }

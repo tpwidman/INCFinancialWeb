@@ -13,6 +13,7 @@ export default class NavbarTemplateControl extends ui.TemplateControl {
         aboutView: AboutViewControl,
         connectView: ConnectViewControl,
         portfolioView: PortfolioViewControl
-    };   
+    }
 }
+
 register.control('navbar', NavbarTemplateControl);
