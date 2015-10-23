@@ -21,20 +21,14 @@ export default class HomeViewControl extends BaseViewControl {
         this.context.showKeep = true
     }
 
-    scrollToTop() : void {
-
-    }
-
     collapseCreate() {
         if (this.context.showCreate = true) {
             this.context.showCreate = false;
-
         }
     }
     collapseGrow() {
         if (this.context.showGrow = true) {
             this.context.showGrow = false;
-
         }
     }
     collapseKeep() {

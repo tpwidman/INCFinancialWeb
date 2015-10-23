@@ -1,5 +1,6 @@
 [plat-control="navbar"] {
     position: fixed;
+    top: 0;
     z-index: 100;
     width: 100%;
     color: #fff;
@@ -19,20 +20,20 @@
         // animation-timing-function: linear;
         // animation-duration: 0.4s;
 
-        @-moz-keyframes dropHeader {
-              0% {-moz-transform: translateY(-800px);}
-              100% {-moz-transform: translateY(0);}
-              }
+        // @-moz-keyframes dropHeader {
+        //       0% {-moz-transform: translateY(-800px);}
+        //       100% {-moz-transform: translateY(0);}
+        //       }
 
-        @-webkit-keyframes dropHeader {
-             0% {-webkit-transform: translateY(-800px);}
-             100% {-webkit-transform: translateY(0);}
-             }
+        // @-webkit-keyframes dropHeader {
+        //      0% {-webkit-transform: translateY(-800px);}
+        //      100% {-webkit-transform: translateY(0);}
+        //      }
 
-         @keyframes dropHeader {
-             0% {transform: translateY(-800px);}
-             100% {transform: translateY(0);}
-             }
+        //  @keyframes dropHeader {
+        //      0% {transform: translateY(-800px);}
+        //      100% {transform: translateY(0);}
+        //      }
 
         .logo {
             height: 40px;
@@ -49,37 +50,37 @@
             list-style-type: none;
             font-size: 16px;
         }
-        .slider{
-            position: relative;
-            padding-bottom: 3px;
-        }
-        .slider:before {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            height: 3px;
-            width: 0;
-            transition: width 0s ease, background .5s ease;
-        }
-        .slider:after {
-            content: '';
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            height: 3px;
-            width: 0;
-            background: whitesmoke;
-            transition: width .5s ease;
-        }
-        .slider:hover:before {
-            width: 100%;
-            background: whitesmoke;
-            transition: width .5s ease;
-        }
-        .slider:hover:after {
-            width: 100%;
-            background: transparent;
-            transition: all 0s ease;
-}
+        // .slider{
+        //     position: relative;
+        //     padding-bottom: 3px;
+        // }
+        // .slider:before {
+        //     content: '';
+        //     position: absolute;
+        //     left: 0;
+        //     bottom: 0;
+        //     height: 3px;
+        //     width: 0;
+        //     transition: width 0s ease, background .5s ease;
+        // }
+        // .slider:after {
+        //     content: '';
+        //     position: absolute;
+        //     right: 0;
+        //     bottom: 0;
+        //     height: 3px;
+        //     width: 0;
+        //     background: whitesmoke;
+        //     transition: width .5s ease;
+        // }
+        // .slider:hover:before {
+        //     width: 100%;
+        //     background: whitesmoke;
+        //     transition: width .5s ease;
+        // }
+        // .slider:hover:after {
+        //     width: 100%;
+        //     background: transparent;
+        //     transition: all 0s ease;
+        // }
 }
