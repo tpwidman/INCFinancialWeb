@@ -24,9 +24,9 @@ export default class NavbarTemplateControl extends ui.TemplateControl {
             var elem: HTMLElement = <HTMLElement>e.target;
             if (document.body.scrollTop >= 25) {
                 console.log('adding class');
-                document.body.;
+                //document.body.;
             } else {
-                ('background: transparent');
+               //('background: transparent');
             }
         });
     }
