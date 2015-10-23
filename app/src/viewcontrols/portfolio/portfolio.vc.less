@@ -1,8 +1,9 @@
 [plat-control="portfolio-vc"] {
-	/*Portfolio Heading*/
+	/********Portfolio Header*******/
 	.row {
 		list-style: none;
         padding: 1em;
+		padding-bottom: 2em;
         .flex-container {
             display: flex;
             align-content: center;
@@ -18,14 +19,18 @@
 
 		}
 		#FriendsBlock {
-            font-family: 'Gotham-Book';
-
+			.flex-container {
+			h1 {
+			font-family: 'Gotham-Book';
+			font-weight: 100;
+			}
+			}
 			img {
 				margin-right: 10px;
 			}
 		}
 	}
-	/*End of Portfolio Heading*/
+	/*End of Portfolio Header*/
 
 	//TESTIMONIALS//
 
@@ -44,7 +49,7 @@
 
 			//Div for name of customer//
 			.nameofCustomer {
-				font-family: 'Gotham-Bold';
+				//font-family: 'Gotham-Black';
                 .flex-icon {
                     display: flex;
                     justify-content: space-between;
@@ -55,28 +60,32 @@
                 #underline {
                     border-bottom: 3px solid #6B7F92;
                 }
+				
+				h3 {
+					font-family: 'Gotham-Bold';
+					//font-weight: 700;
+					font-size: 1.6em;
+					margin-bottom: 0.2em;
+					letter-spacing: -2px;
+				}
 
 				.title {
 						font-weight: 100;
 						font-family: 'Gotham-Book';
+						//letter-spacing: -2px;
 						}
 
 				#logo1 {
 						height: 30px;
 						}
 				#logo2 {
-						height: 50px;
-						width: 50px;
-						}
-				#logo3 {
-						height: 50px;
-						width: 50px;
+						height: 30px;
 						}
             }
 
 			//Div for the image of the customer//
 			.image {
-                padding: 0.1em;
+               // padding: 0.1em;
 				height: 250x;
 				width: 275px;
 				// float: left;
