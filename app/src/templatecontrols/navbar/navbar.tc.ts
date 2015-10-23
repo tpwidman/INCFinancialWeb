@@ -14,6 +14,14 @@ export default class NavbarTemplateControl extends ui.TemplateControl {
         connectView: ConnectViewControl,
         portfolioView: PortfolioViewControl
     }
+
+    onScroll() : void {
+        if (document.body.scrollTop > 50) {
+            document.getElementById("nav").className = "background-transparent";
+        } else {
+            document.getElementById("nav").className = "background-opaque";
+        }
+    }
 }
 
 register.control('navbar', NavbarTemplateControl);

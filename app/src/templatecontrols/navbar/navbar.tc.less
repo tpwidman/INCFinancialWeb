@@ -4,24 +4,32 @@
     z-index: 100;
     width: 100%;
     color: #fff;
-    background-color: rgba(109, 134, 146, 0.5);
-        // -moz-animation-name: dropHeader;
+
+    .background-opaque {
+        background-color: rgba(109, 134, 146, 0.75);
+        transition: background-color 2s ease-in;
+    }
+    .background-transparent {
+        background-color: rgba(109, 134, 146, 0.0);
+        transition: background-color 2s ease-in;
+    }
+        // -moz-animation-name: changeNav;
         // -moz-animation-iteration-count: 1;
-        // -moz-animation-timing-function: ste;
-        // -moz-animation-duration: 0.4s;
+        // -moz-animation-timing-function: linear;
+        // -moz-animation-duration: 0.5s;
 
         // -webkit-animation-name: dropHeader;
         // -webkit-animation-iteration-count: 1;
         // -webkit-animation-timing-function: linear;
-        // -webkit-animation-duration: 0.4s;
+        // -webkit-animation-duration: 0.5s;
 
         // animation-name: dropHeader;
         // animation-iteration-count: 1;
         // animation-timing-function: linear;
-        // animation-duration: 0.4s;
+        // animation-duration: 0.5s;
 
         // @-moz-keyframes dropHeader {
-        //       0% {-moz-transform: translateY(-800px);}
+        //       0% {-moz-transform: nslateY(-800px);}
         //       100% {-moz-transform: translateY(0);}
         //       }
 
