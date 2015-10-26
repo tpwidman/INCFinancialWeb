@@ -82,8 +82,9 @@
 
     .line-break {
         border: 0;
+        width:50%;
         height: 3px;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.35));
     }
     .options {
         padding: 2em;
@@ -107,33 +108,46 @@
             font-family: 'Gotham-Bold';
         }
     }
-    
+@media all and (max-width: 900px) {
+    .stats{
+        justify-content: space-around;
+        margin-top:16px;
+    }
+}
     .points {
+        height:294;
+        padding-top:50px;
         .stats {
             border-left: 3px solid #fff;
             border-right: 3px solid #fff;
-            padding: 0em;
             margin-left:3em;
             margin-right:3em;
-            line-height: 80%;
-            width:290px;
-            height:294;
+            padding-bottom:10px;
+            line-height: 90%;
+            width:80%;
+            space{
+                padding-bottom: 10px;
+            }
+            #firstp{
+                line-height:90%;
+                margin: 1.25em 0 0em;
+            }
+            
             h4{
                 line-height:80%;
                 margin: 0em 0 0em;
-                font-size:1.10em;
+                font-size:1.45em;
                 font-family:'Gotham-Bold';
             }
             h5{
                 text-transform: uppercase; 
                 font-family:'Gotham-Bold';
-                font-size:1em;
+                font-size:1.15em;
                 line-height: 80%;
                 margin:0 auto;
                 }
             .stretch{
                 margin: 0em 0 0em;
-                line-height: 50%;
             }
             h1{
                 font-size: 6em;
@@ -142,12 +156,14 @@
   
             p#firstp{
                 line-height: 30%;
+                font-size: .25em;
                 text-align: justify;
                 margin: 0em 0 0em;
+                margin-top:4px;
             }
             }
             h1#tadSmaller{
-                font-size: 5em;
+                font-size: 5.35em;
                 margin: 0em 0 0em;
                 line-height: 85%;
             }
@@ -157,16 +173,14 @@
             .stretch1{
                 letter-spacing: .3em;
                 margin:0 auto;
-                line-height: 90%;
+                line-height: 93%;
                 text-align:center;
                 justify-content: space-between;
-                width: 25vw;
             }
             
             h3{
                 margin: 0em, 0, 0em, 0;
                 line-height:80%;
-                text-align: justify;
                 margin: 0em 0 0em;
             }
         }
