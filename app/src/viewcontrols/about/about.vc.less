@@ -1,5 +1,10 @@
 [plat-control="about-vc"] {
     top: 75px;
+    @media only screen and (max-width: 700px) {
+        #logo1, #logo2 {
+            display: none;
+        }
+    }
 /********About Header*******/
 	.row {
 		list-style: none;
@@ -197,7 +202,7 @@ that would have been too much work to try and nest*/
 				color: #565E47;
 				font-family: 'Gotham-Book';
 				font-weight: 500;
-				
+
 				p {
 					margin-top: 0em;
 				}

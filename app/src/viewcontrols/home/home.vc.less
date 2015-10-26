@@ -1,6 +1,21 @@
 [plat-control="home-vc"] {
     text-align: center;
     top: 75px;
+    @media only screen and (min-width: 701px) {
+        .mobile-drop {
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 700px) {
+        .desktop-drop {
+            display: none;
+        }
+        .mobile-drop {
+            width: 70%;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
     span {
         font-family: 'Gotham-Bold';
 
