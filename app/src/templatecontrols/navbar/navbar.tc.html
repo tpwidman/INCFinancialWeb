@@ -1,4 +1,4 @@
-<nav class="navbar" id="nav" plat-name="navbar">
+<nav class="navbar" id="nav" plat-visibility="{{showNavbar}}">
     <ul class="nav-list flex-container">
         <plat-link plat-options="{view: homeView}"><li class="flex-item">Home</li></plat-link>
         <plat-link plat-options="{view: portfolioView}"><li class="flex-item">Portfolio</li></plat-link>
@@ -7,3 +7,13 @@
         <plat-link plat-options="{view: connectView}"><li class="flex-item">Connect</li></plat-link>
     </ul>
 </nav>
+<div class="container">
+    <div class="drawer-nav hide-drawer">
+        <img src="../images/icons/INC Logo.White.svg" class="logo">
+        <plat-drawer-controller class="drawer-controller" plat-name="drawerController">
+            <div class="navbar-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+        </plat-drawer-controller>
+    </div>
+</div>

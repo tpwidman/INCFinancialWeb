@@ -1,13 +1,15 @@
-import {controls, events, register, ui} from 'platypus';
+import {controls, events, register, ui, web} from 'platypus';
 import BaseViewControl from '../../viewcontrols/base/base.vc';
 import HomeViewControl from '../../viewcontrols/home/home.vc';
 import AboutViewControl from '../../viewcontrols/about/about.vc';
 import ConnectViewControl from '../../viewcontrols/connect/connect.vc';
 import PortfolioViewControl from '../../viewcontrols/portfolio/portfolio.vc';
+import {DrawerController} from 'platypusui';
 
 export default class NavbarTemplateControl extends ui.TemplateControl {
     templateString: string = require('./navbar.tc.html');
-    navbar: controls.INamedElement<HTMLDivElement, any>;
+    drawerController: controls.INamedElement<HTMLDivElement, DrawerController>;
+
     context: any = {
         showNavbar: true,
         homeView: HomeViewControl,
@@ -16,20 +18,21 @@ export default class NavbarTemplateControl extends ui.TemplateControl {
         portfolioView: PortfolioViewControl
     }
 
-    // loaded() : void {
-    //     let scrollNav: HTMLElement = document.body,
-    //        navbar = this.navbar.element;
 
-    //     document.addEventListener('scroll', (e) => {
-    //         var elem: HTMLElement = <HTMLElement>e.target;
-    //         if (document.body.scrollTop >= 25) {
-    //             console.log('adding class');
-    //            document.body.;
-    //         } else {
-    //           ('background: transparent');
-    //         }
-    //     });
-    //}
+    initialize(): void {
+        this.on('navigated', (ev: events.DispatchEvent, utils: web.UrlUtils) => {
+            this.drawerController.control.close();
+            if (utils.pathname.indexOf('/portfolio') === 0) {
+                this.context.currentView = 'Portfolio'
+            } else if (utils.pathname.indexOf('/about') === 0) {
+                this.context.currentView = 'About'
+            } else if (utils.pathname.indexOf('/connect') === 0) {
+                this.context.currentView = 'Connect'
+            } else {
+                this.context.currentView = 'Home'
+            }
+        });
+    }
 }
 
 register.control('navbar', NavbarTemplateControl);

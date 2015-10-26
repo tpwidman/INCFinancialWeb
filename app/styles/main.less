@@ -1,14 +1,17 @@
 @import '../../node_modules/platypusui/dist/platypus';
 @import '../styles/typography.less';
 
-body {
-    top: 75px;
+.container {
     color: #fff;
     background-image: url('../images/INC-bg-whole2.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    overflow: scroll;
+    .overflow {
+        height: 100vh;
+        overflow: scroll;
+    }
+
     -webkit-font-smoothing: subpixel-antialiased;
 
     h1, h3 {
@@ -23,6 +26,21 @@ body {
         flex-flow: row nowrap;
     }
 }
+
+.drawer {
+    background-color: black;
+        .drawer-item {
+            font-family: 'Gotham-Book', sans-serif;
+            display: flex;
+            flex-flow: column wrap;
+            text-align: left;
+            font-size: 36px;
+            text-decoration: none;
+            color: #fff;
+            border-bottom: 2px solid #fff;
+            padding: 2em 0em 2em 0em;
+        }
+    }
 
 @import '../src/templatecontrols/footer/footer.tc.less';
 @import '../src/templatecontrols/navbar/navbar.tc.less';
