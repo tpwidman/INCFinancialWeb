@@ -16,20 +16,20 @@ export default class NavbarTemplateControl extends ui.TemplateControl {
         portfolioView: PortfolioViewControl
     }
 
-    loaded() : void {
-        let scrollNav: HTMLElement = document.body,
-           navbar = this.navbar.element;
+    // loaded() : void {
+    //     let scrollNav: HTMLElement = document.body,
+    //        navbar = this.navbar.element;
 
-        document.addEventListener('scroll', (e) => {
-            var elem: HTMLElement = <HTMLElement>e.target;
-            if (document.body.scrollTop >= 25) {
-                console.log('adding class');
-                //document.body.;
-            } else {
-               //('background: transparent');
-            }
-        });
-    }
+    //     document.addEventListener('scroll', (e) => {
+    //         var elem: HTMLElement = <HTMLElement>e.target;
+    //         if (document.body.scrollTop >= 25) {
+    //             console.log('adding class');
+    //            document.body.;
+    //         } else {
+    //           ('background: transparent');
+    //         }
+    //     });
+    //}
 }
 
 register.control('navbar', NavbarTemplateControl);
