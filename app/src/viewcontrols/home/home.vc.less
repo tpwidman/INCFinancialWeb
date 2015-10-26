@@ -1,6 +1,21 @@
 [plat-control="home-vc"] {
     text-align: center;
     top: 75px;
+    @media only screen and (min-width: 701px) {
+        .mobile-drop {
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 700px) {
+        .desktop-drop {
+            display: none;
+        }
+        .mobile-drop {
+            width: 70%;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
     span {
         font-family: 'Gotham-Bold';
 
@@ -110,17 +125,6 @@
             font-family: 'Gotham-Bold';
         }
     }
-@media all and (max-width: 900px) {
-    .points{
-        padding-left:10vw;
-        padding-right:10vw;
-    }
-    .stats{
-        justify-content: space-around;
-        margin-top:16px;
-        width:100%;
-    }
-}
     .points {
         height:294;
         padding-top:6vh;
@@ -131,6 +135,7 @@
             align-content: center;
             align-items: center;
             justify-content: space-around;
+            margin-top: 1.5em;
                 .stats {
                     border-left: 3px solid #fff;
                     border-right: 3px solid #fff;
